@@ -11,10 +11,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f3758f8f58fdef43803eb9be1df0608, type: 3}
   m_Name: PhotonServerSettings
   m_EditorClassIdentifier: 
-  HostType: 0
-  ServerAddress: 127.0.0.1
+  HostType: 1
+  ServerAddress: app-us.exitgamescloud.com
   ServerPort: 5055
-  AppID: 
+  AppID: 4b4fed57-443a-45e1-b455-bfa0c9afb91c
   PingCloudServersOnAwake: 0
   RpcList:
   - Chat
