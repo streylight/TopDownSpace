@@ -26,7 +26,7 @@ GameObject:
   - 4: {fileID: 400002}
   - 199: {fileID: 19900000}
   - 198: {fileID: 19800000}
-  - 114: {fileID: 11400000}
+  - 114: {fileID: 11400002}
   m_Layer: 8
   m_Name: Rearburner Right
   m_TagString: Untagged
@@ -44,7 +44,7 @@ GameObject:
   - 4: {fileID: 400004}
   - 199: {fileID: 19900002}
   - 198: {fileID: 19800002}
-  - 114: {fileID: 11400002}
+  - 114: {fileID: 11400004}
   m_Layer: 8
   m_Name: Glow
   m_TagString: Untagged
@@ -65,8 +65,9 @@ GameObject:
   - 64: {fileID: 6400000}
   - 111: {fileID: 11100000}
   - 54: {fileID: 5400000}
+  - 114: {fileID: 11400008}
   - 114: {fileID: 11400006}
-  - 114: {fileID: 11400004}
+  - 114: {fileID: 11400000}
   m_Layer: 0
   m_Name: SpaceCraft
   m_TagString: Untagged
@@ -84,7 +85,7 @@ GameObject:
   - 4: {fileID: 400008}
   - 199: {fileID: 19900004}
   - 198: {fileID: 19800004}
-  - 114: {fileID: 11400008}
+  - 114: {fileID: 11400010}
   m_Layer: 0
   m_Name: Rearburner Left
   m_TagString: Untagged
@@ -102,7 +103,7 @@ GameObject:
   - 4: {fileID: 400010}
   - 199: {fileID: 19900006}
   - 198: {fileID: 19800006}
-  - 114: {fileID: 11400010}
+  - 114: {fileID: 11400012}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -135,7 +136,7 @@ GameObject:
   - 4: {fileID: 400014}
   - 198: {fileID: 19800008}
   - 199: {fileID: 19900008}
-  - 114: {fileID: 11400012}
+  - 114: {fileID: 11400014}
   m_Layer: 8
   m_Name: Vapour Trail System
   m_TagString: Untagged
@@ -169,7 +170,7 @@ GameObject:
   - 4: {fileID: 400018}
   - 199: {fileID: 19900010}
   - 198: {fileID: 19800010}
-  - 114: {fileID: 11400014}
+  - 114: {fileID: 11400016}
   m_Layer: 8
   m_Name: Afterburner Right
   m_TagString: Untagged
@@ -187,7 +188,7 @@ GameObject:
   - 4: {fileID: 400020}
   - 199: {fileID: 19900012}
   - 198: {fileID: 19800012}
-  - 114: {fileID: 11400016}
+  - 114: {fileID: 11400018}
   m_Layer: 0
   m_Name: Afterburner Left
   m_TagString: Untagged
@@ -205,7 +206,7 @@ GameObject:
   - 4: {fileID: 400022}
   - 199: {fileID: 19900014}
   - 198: {fileID: 19800014}
-  - 114: {fileID: 11400018}
+  - 114: {fileID: 11400020}
   m_Layer: 0
   m_Name: Glow
   m_TagString: Untagged
@@ -223,7 +224,7 @@ GameObject:
   - 4: {fileID: 400024}
   - 199: {fileID: 19900016}
   - 198: {fileID: 19800016}
-  - 114: {fileID: 11400020}
+  - 114: {fileID: 11400022}
   m_Layer: 8
   m_Name: Glow
   m_TagString: Untagged
@@ -286,8 +287,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
-  m_LocalRotation: {x: -6.04446555e-08, y: .984920084, z: 8.8009989e-07, w: .173009917}
-  m_LocalPosition: {x: 15.7299461, y: 0, z: 66.8206177}
+  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400012}
@@ -572,6 +573,26 @@ MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  subId: 0
+  ownerId: 0
+  group: 0
+  prefixBackup: -1
+  observed: {fileID: 0}
+  synchronization: 0
+  onSerializeTransformOption: 3
+  onSerializeRigidBodyOption: 2
+  instantiationId: -1
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -579,7 +600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minColour: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &11400002
+--- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -591,7 +612,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minColour: {r: 0, g: 0, b: 0, a: 1}
---- !u!114 &11400004
+--- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -603,7 +624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 160
---- !u!114 &11400006
+--- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -617,7 +638,7 @@ MonoBehaviour:
   maxEnginePower: 40
   throttleChangeSpeed: .300000012
   reverse: 0
---- !u!114 &11400008
+--- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -629,7 +650,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minColour: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &11400010
+--- !u!114 &11400012
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -641,7 +662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minColour: {r: 0, g: 0, b: 0, a: 1}
---- !u!114 &11400012
+--- !u!114 &11400014
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -653,7 +674,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minColour: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &11400014
+--- !u!114 &11400016
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -665,7 +686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minColour: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &11400016
+--- !u!114 &11400018
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -677,7 +698,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minColour: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &11400018
+--- !u!114 &11400020
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -689,7 +710,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minColour: {r: 0, g: 0, b: 0, a: 0}
---- !u!114 &11400020
+--- !u!114 &11400022
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -718,7 +739,7 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: .0500000007
+      scalar: .300000012
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -878,7 +899,7 @@ ParticleSystem:
         rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: 0
+      scalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1755,7 +1776,7 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: .0500000007
+      scalar: .75
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -1902,10 +1923,10 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4278190080
+        rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: 1.80000007
+      scalar: 6
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2777,7 +2798,7 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: .0500000007
+      scalar: .300000012
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -2937,7 +2958,7 @@ ParticleSystem:
         rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: 0
+      scalar: 1
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3814,7 +3835,7 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: .0500000007
+      scalar: .75
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -3961,10 +3982,10 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 4278190080
+        rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: 1.80000007
+      scalar: 6
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -5883,7 +5904,7 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: .0500000007
+      scalar: .300000012
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -6040,10 +6061,10 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: .420000017
+      scalar: 1.39999998
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -6920,7 +6941,7 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: .0500000007
+      scalar: .300000012
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -7077,10 +7098,10 @@ ParticleSystem:
         rgba: 4294967295
       maxColor:
         serializedVersion: 2
-        rgba: 0
+        rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: .420000017
+      scalar: 1.39999998
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -7957,7 +7978,7 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: .0500000007
+      scalar: .5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -8107,7 +8128,7 @@ ParticleSystem:
         rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: 0
+      scalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -8979,7 +9000,7 @@ ParticleSystem:
   InitialModule:
     enabled: 1
     startLifetime:
-      scalar: .0500000007
+      scalar: .5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -9129,7 +9150,7 @@ ParticleSystem:
         rgba: 4294967295
       minMaxState: 0
     startSize:
-      scalar: 0
+      scalar: 2
       maxCurve:
         serializedVersion: 2
         m_Curve:
