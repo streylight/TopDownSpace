@@ -4,7 +4,7 @@ using System.Collections;
 public class GameManager : MonoBehaviour {
     //Remove this when we have stuff
     private Font _logoFont;
-    private GUIStyle _logoStyle;
+    private GUIStyle _logoStyle = new GUIStyle();
 
 	// Use this for initialization
 	void Start () {
