@@ -4773,7 +4773,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a45236fb6ef97f42ac3bcb83a9cddd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 100000, guid: 5487804dd59b9a34aa77ddf7c71a5630, type: 2}
+  missile: {fileID: 100000, guid: 6be228a51813ce44b93150acf78b589e, type: 2}
 --- !u!1 &1597008707
 GameObject:
   m_ObjectHideFlags: 0

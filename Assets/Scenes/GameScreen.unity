@@ -2490,6 +2490,7 @@ GameObject:
   - 54: {fileID: 851761275}
   - 114: {fileID: 851761276}
   - 114: {fileID: 851761269}
+  - 114: {fileID: 851761277}
   m_Layer: 0
   m_Name: SpaceCraft
   m_TagString: Untagged
@@ -2610,6 +2611,18 @@ MonoBehaviour:
   maxEnginePower: 40
   throttleChangeSpeed: .300000012
   reverse: 0
+--- !u!114 &851761277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 851761268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a45236fb6ef97f42ac3bcb83a9cddd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  missile: {fileID: 100000, guid: 6be228a51813ce44b93150acf78b589e, type: 2}
 --- !u!1 &1021851297
 GameObject:
   m_ObjectHideFlags: 0

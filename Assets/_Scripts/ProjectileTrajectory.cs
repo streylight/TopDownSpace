@@ -14,6 +14,7 @@ public class ProjectileTrajectory : MonoBehaviour
 {
 	// Constants
 	public const float projectileRange = 500.0f;
+	public       float currentVelocity = 0.0f;
 
 	// Class Members
 	GameObject explosion;
