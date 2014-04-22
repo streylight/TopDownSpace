@@ -84,7 +84,7 @@ GameObject:
   - 4: {fileID: 221954395}
   - 114: {fileID: 221954394}
   m_Layer: 0
-  m_Name: Menu
+  m_Name: MenuWindow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

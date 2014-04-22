@@ -61,8 +61,8 @@ public class ShipController : MonoBehaviour {
 
 	// self explanatory
 	void ControlThrottle() {
-		Throttle = Mathf.Clamp01(Throttle + ThrottleInput * Time.deltaTime * throttleChangeSpeed);
-		BankThrottle = Mathf.Clamp01(BankThrottle + RotationInput * Time.deltaTime * throttleChangeSpeed);
+		Throttle = Mathf.Clamp01(Throttle + ThrottleInput * Time.fixedDeltaTime * throttleChangeSpeed);
+        BankThrottle = Mathf.Clamp01(BankThrottle + RotationInput * Time.fixedDeltaTime * throttleChangeSpeed);
 		EnginePower = Throttle * maxEnginePower;
 		BankPower = BankThrottle * maxEnginePower / 2;
 	}
@@ -73,8 +73,8 @@ public class ShipController : MonoBehaviour {
 
 		//used for the zero gravity type effect
 		forces += EnginePower * ((sign * transform.forward) * ThrottleInput);
-		Debug.Log ("Thrrotle input is " + ThrottleInput);
-		Debug.Log (forces);
+		//Debug.Log ("Thrrotle input is " + ThrottleInput);
+		//Debug.Log (forces);
 		rigidbody.AddForce (forces);
 	}
 }
