@@ -21,4 +21,8 @@ MonoBehaviour:
   - InstantiateRpc
   - OnAwakeRPC
   - DestroyRpc
+  - Marco
+  - Polo
+  - TaggedPlayer
+  - SetPosition
   DisableAutoOpenWizard: 0
