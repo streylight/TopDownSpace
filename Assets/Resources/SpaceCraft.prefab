@@ -692,7 +692,7 @@ MonoBehaviour:
   group: 0
   prefixBackup: -1
   observed: {fileID: 400026}
-  synchronization: 3
+  synchronization: 1
   onSerializeTransformOption: 3
   onSerializeRigidBodyOption: 2
   instantiationId: -1

@@ -34,7 +34,7 @@ public class JetParticleEffect : MonoBehaviour {
 
 	// Update is called once per frame
     void Update () {
-		Debug.Log ("jet throttle is " + jet.Throttle);
+		//Debug.Log ("jet throttle is " + jet.Throttle);
         // update the particle system based on the jets throttle
 		if (!jet.reverse) {
 			system.startLifetime = Mathf.Lerp (0.0f, originalLifetime, jet.ThrottleInput);
