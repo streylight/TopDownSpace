@@ -61,6 +61,7 @@ public class InRoomChat : Photon.MonoBehaviour
         if (GUILayout.Button("Send", GUILayout.ExpandWidth(false)))
         {
             this.photonView.RPC("Chat", PhotonTargets.All, this.inputLine);
+
             this.inputLine = "";
             GUI.FocusControl("");
         }
@@ -81,7 +82,7 @@ public class InRoomChat : Photon.MonoBehaviour
             }
             else
             {
-                senderName = PlayerPrefs.GetString("userName");
+                senderName = "player " + mi.sender.ID;
             }
         }
 
