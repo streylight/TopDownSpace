@@ -81,7 +81,7 @@ public class InRoomChat : Photon.MonoBehaviour
             }
             else
             {
-                senderName = "player " + mi.sender.ID;
+                senderName = PlayerPrefs.GetString("userName");
             }
         }
 
