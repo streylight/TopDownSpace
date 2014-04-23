@@ -320,12 +320,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1349062461}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ee051a682910456fbe8f8211393be5a, type: 3}
+  m_Script: {fileID: 11500000, guid: ca7238592326ea342b5ba7da9a819e64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
-  distance: 0
-  height: 25
+  distance: 10
+  height: 80
   heightDamping: 2
   rotationDamping: 3
 --- !u!45 &1349062463

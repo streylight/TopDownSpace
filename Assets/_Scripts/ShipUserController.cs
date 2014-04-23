@@ -5,12 +5,7 @@ public class ShipUserController : Photon.MonoBehaviour {
 
     public float rotationSpeed = 160; // 160 = best rotation speed
     private ShipController ship;
-
-    //void Awake()
-    //{
-    //    ship = GetComponent<ShipController>();
-    //}
-	
+    	
     //void FixedUpdate() {
     //    // get input for rotation and the forward/reverse movement
     //    float rotate = CrossPlatformInput.GetAxis("Horizontal");
@@ -30,6 +25,15 @@ public class ShipUserController : Photon.MonoBehaviour {
 
     private Vector3 correctPlayerPos = Vector3.zero; // We lerp towards this
     private Quaternion correctPlayerRot = Quaternion.identity; // We lerp towards this
+
+    void Start()
+    {
+        if (photonView.isMine)
+        {
+            var camera = Camera.main.GetComponent<SmoothFollow>();
+            camera.target = transform;
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -41,11 +45,13 @@ public class ShipUserController : Photon.MonoBehaviour {
         else if (photonView.isMine)
         {
             ship = GetComponent<ShipController>();
+
             //rotate ship around y axis
             transform.Rotate(0.0f, Input.GetAxis("Horizontal") * rotationSpeed * Time.deltaTime, 0.0f);
             // clamps boundries for map which are currently hardcoded
             // the clamp is needed to prevent the rotation physics to move the ship +- on the y axis which is baaaaad
             transform.position = new Vector3(Mathf.Clamp(transform.position.x, -500, 500),0.0f,Mathf.Clamp(transform.position.z,-500,500));
+                       
         }
     }
 
@@ -74,7 +80,6 @@ public class ShipUserController : Photon.MonoBehaviour {
 
     void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
-        Debug.Log("TEST");
         if (stream.isWriting)
         {
             // We own this player: send the others our data
