@@ -42,13 +42,13 @@ public class ProjectileTrajectory : MonoBehaviour
 	void OnCollisionEnter(Collision collision) {
 		// Local Variables
 		ContactPoint contact = collision.contacts[0];
-		GameObject thisExplosion = (GameObject)GameObject.Instantiate(explosion, contact.point + (contact.normal * 5.0f), Quaternion.identity);
+		//GameObject thisExplosion = (GameObject)GameObject.Instantiate(explosion, contact.point + (contact.normal * 5.0f), Quaternion.identity);
 		
 		if(collision.gameObject.tag == "enemy") {
 			Destroy(collision.gameObject);
 		}
 		
-		Destroy(thisExplosion, 2.0f);
+		//Destroy(thisExplosion, 2.0f);
 		Destroy(gameObject);
 	}
 }
