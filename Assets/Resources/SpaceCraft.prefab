@@ -734,7 +734,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a45236fb6ef97f42ac3bcb83a9cddd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missile: {fileID: 100000, guid: 6be228a51813ce44b93150acf78b589e, type: 2}
+  missile: {fileID: 11400000, guid: 2451958374f854fea9a83bde415df166, type: 2}
+  ship: {fileID: 400026}
 --- !u!198 &19800000
 ParticleSystem:
   m_ObjectHideFlags: 1

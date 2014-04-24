@@ -9,14 +9,15 @@
 //------------------------------------------------------------------------------
 using System;
 using UnityEngine;
+using System.Collections;
 
 [RequireComponent (typeof (Rigidbody))]
 
 public class ProjectileTrajectory : MonoBehaviour
 {
 	// Constants
-	public const float projectileRange = 500.0f;
-	public       float currentVelocity = 0.0f;
+	public float projectileRange = 500.0f;
+	public float currentVelocity = 0.0f; 
 
 	// Class Members
 	GameObject explosion;
@@ -37,6 +38,26 @@ public class ProjectileTrajectory : MonoBehaviour
 		if(distance > projectileRange) {
 			Destroy(gameObject);
 		}
+	}
+	
+	void OnEnable() {
+		StartCoroutine(Shoot());
+	}
+	
+	void OnDisable() {
+		StopAllCoroutines();
+	}
+	
+	IEnumerator Shoot()
+	{
+		float travelledDistance = 0;
+		while (travelledDistance < projectileRange)
+		{
+			travelledDistance  += currentVelocity * Time.deltaTime;
+			transform.position += transform.forward * (currentVelocity * Time.deltaTime);
+			yield return 0;
+		}
+		this.Recycle();
 	}
 	
 	void OnCollisionEnter(Collision collision) {
