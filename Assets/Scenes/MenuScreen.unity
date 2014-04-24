@@ -408,7 +408,7 @@ GameObject:
   - 114: {fileID: 1407824681}
   - 114: {fileID: 1407824680}
   m_Layer: 0
-  m_Name: ChatWindow
+  m_Name: Chat Window
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
